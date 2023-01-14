@@ -7,3 +7,4 @@ vim.opt.shiftwidth = 4
 vim.opt.timeoutlen = 1000
 vim.opt.updatetime = 300
 
+vim.wo.number = true

@@ -42,6 +42,7 @@ return packer.startup(function(use)
     use "wbthomason/packer.nvim" 
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
+	use "nvim-telescope/telescope.nvim"
     use "nvim-tree/nvim-web-devicons"
     use {"nvim-tree/nvim-tree.lua",
 			tag = 'nightly'
