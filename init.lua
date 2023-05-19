@@ -6,4 +6,7 @@ require "milosz.tree"
 require "milosz.treesitter"
 require "milosz.dashboard"
 require "milosz.cmp"
+require "milosz.lsp"
+require "milosz.bufferline"
+require "milosz.spotify"
 

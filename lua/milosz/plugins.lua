@@ -39,7 +39,8 @@ packer.init {
 }
 
 return packer.startup(function(use)
-    use "wbthomason/packer.nvim" 
+    use "wbthomason/packer.nvim"
+	use "rcarriga/nvim-notify"
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
 	use "nvim-telescope/telescope.nvim"
@@ -51,23 +52,26 @@ return packer.startup(function(use)
 		"nvim-treesitter/nvim-treesitter",
 		run = ":TSUpdate",
 	}
-	use "lunarvim/darkplus.nvim"
+	use "stsewd/spotify.nvim"
+	use "akinsho/bufferline.nvim"
+	use "moll/vim-bbye"
 	use "glepnir/dashboard-nvim"
-
+	use "lunarvim/darkplus.nvim"
 	-- completion
 	use "hrsh7th/nvim-cmp" -- The completion plugin
 	use "hrsh7th/cmp-buffer" -- buffer completions
 	use "hrsh7th/cmp-path" -- path completions
 	use "hrsh7th/cmp-cmdline" -- cmdline completions
+	use "hrsh7th/cmp-nvim-lsp" -- lsp completion 
 	use "saadparwaiz1/cmp_luasnip" -- snippet completions	
-	
 	-- snippets
 	use "L3MON4D3/LuaSnip" --snippet engine
 
 	-- lsp
 	use "neovim/nvim-lspconfig"
-	use "williamboman/nvim-lsp-installer"
-	
+	use "williamboman/mason.nvim"
+  	use "williamboman/mason-lspconfig.nvim"
+
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()
 	end
