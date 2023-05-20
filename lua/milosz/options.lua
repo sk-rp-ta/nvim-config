@@ -5,7 +5,7 @@ vim.opt.shiftwidth = 4
 
 -- faster reload
 vim.opt.timeoutlen = 1000
-vim.opt.updatetime = 300
+vim.opt.updatetime = 2000
 
 vim.wo.relativenumber = true
 vim.wo.number = true

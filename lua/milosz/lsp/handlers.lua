@@ -37,22 +37,24 @@ M.setup = function()
 
   vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
     border = "rounded",
+	focusable = false
   })
 
   vim.lsp.handlers["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, {
     border = "rounded",
+	focusable = false
   })
 end
 
 local function lsp_highlight_document(client)
   -- Set autocommands conditional on server_capabilities
-  if client.server_capabilities.documentHighlight then
+  if client.server_capabilities.documentHighlightProvider then
     vim.api.nvim_exec(
       [[
       augroup lsp_document_highlight
         autocmd! * <buffer>
-        autocmd CursorHold <buffer> lua vim.lsp.buf.document_highlight()
-        autocmd CursorMoved <buffer> lua vim.lsp.buf.clear_references()
+        autocmd CursorHold <buffer> lua vim.lsp.buf.hover()
+        autocmd CursorMoved <buffer> lua vim.diagnostic.open_float()
       augroup END
     ]],
       false
