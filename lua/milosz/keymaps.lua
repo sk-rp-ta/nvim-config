@@ -8,4 +8,4 @@ keymap("n", "<A-Tab>", ":NvimTreeToggle<CR>", options)
 keymap("n", "<S-Left>", ":BufferLineCyclePrev<CR>", options)
 keymap("n", "<S-Right>", ":BufferLineCycleNext<CR>", options)
 keymap("n", "<S-q>", ":Bdelete!<CR>", options)
-
+keymap("n", "<C-\\>", ":vsplit<CR>", options)
