@@ -9,4 +9,6 @@ require "milosz.cmp"
 require "milosz.lsp"
 require "milosz.bufferline"
 require "milosz.spotify"
+require "milosz.autopairs"
+require "milosz.toggleterm"
 

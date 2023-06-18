@@ -24,6 +24,7 @@ M.setup = function()
     underline = true,
     severity_sort = true,
     float = {
+	  silent = true,
       focusable = false,
       style = "minimal",
       border = "rounded",
@@ -37,9 +38,8 @@ M.setup = function()
 
 vim.lsp.handlers['textDocument/hover'] = function(_, result, ctx, config)
   config = config or {}
-  config.focus_id = ctx.method
   config.border = "rounded"
-  config.focusable = false
+  config.focus_id = ctx.method
   if not (result and result.contents) then
     return
   end

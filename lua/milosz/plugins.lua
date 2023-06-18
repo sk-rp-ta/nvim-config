@@ -57,6 +57,8 @@ return packer.startup(function(use)
 	use "moll/vim-bbye"
 	use "glepnir/dashboard-nvim"
 	use "lunarvim/darkplus.nvim"
+	use "windwp/nvim-autopairs"
+	use "akinsho/toggleterm.nvim"
 	-- completion
 	use "hrsh7th/nvim-cmp" -- The completion plugin
 	use "hrsh7th/cmp-buffer" -- buffer completions
@@ -71,6 +73,16 @@ return packer.startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "williamboman/mason.nvim"
   	use "williamboman/mason-lspconfig.nvim"
+	
+	-- tests
+	use {
+		"nvim-neotest/neotest",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"nvim-treesitter/nvim-treesitter",
+			"antoinemadec/FixCursorHold.nvim"
+		}
+	}
 
 	if PACKER_BOOTSTRAP then
 		require("packer").sync()

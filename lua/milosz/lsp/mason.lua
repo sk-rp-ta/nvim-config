@@ -1,7 +1,8 @@
 
 local servers = {
-  "lua_ls",
-  "clangd"
+    "lua_ls",
+    "clangd",
+    "pyright"
 }
 
 local settings = {
