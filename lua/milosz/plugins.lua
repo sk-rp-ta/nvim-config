@@ -57,9 +57,10 @@ return packer.startup(function(use)
 	use "moll/vim-bbye"
 	-- dashboard
 	use "goolord/alpha-nvim"
-	use "glepnir/dashboard-nvim"
 	use "lunarvim/darkplus.nvim"
+	-- helpers
 	use "windwp/nvim-autopairs"
+	use "lukas-reineke/indent-blankline.nvim"
 	use "akinsho/toggleterm.nvim"
 	-- completion
 	use "hrsh7th/nvim-cmp" -- The completion plugin

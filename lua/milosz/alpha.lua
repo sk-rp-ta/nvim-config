@@ -22,6 +22,13 @@ dashboard.section.buttons.val = {
     dashboard.button( "q", "  > Quit NVIM", ":qa<CR>"),
 }
 
+dashboard.section.footer.val = {
+	"",
+	"",
+	"With braids and without braids, they'll get away too.",
+	"",
+	"									   ~ Juan Pablo II",
+}
 -- Set footer
 --   NOTE: This is currently a feature in my fork of alpha-nvim (opened PR #21, will update snippet if added to main)
 --   To see test this yourself, add the function as a dependecy in packer and uncomment the footer lines
