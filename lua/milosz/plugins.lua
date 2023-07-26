@@ -55,7 +55,6 @@ return packer.startup(function(use)
 	use "stsewd/spotify.nvim"
 	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
-	use "michaelb/vim-tips"
 	-- dashboard
 	use "goolord/alpha-nvim"
 	use "glepnir/dashboard-nvim"
