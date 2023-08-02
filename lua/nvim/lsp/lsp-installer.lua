@@ -7,17 +7,17 @@ end
 -- Alternatively, you may also register handlers on specific server instances instead (see example below).
 lsp_installer.on_server_ready(function(server)
 	local opts = {
-		on_attach = require("milosz.lsp.handlers").on_attach,
-		capabilities = require("milosz.lsp.handlers").capabilities,
+		on_attach = require("nvim.lsp.handlers").on_attach,
+		capabilities = require("nvim.lsp.handlers").capabilities,
 	}
 
 	 if server.name == "clangd" then
-	 	local cpp_opts = require("milosz.lsp.settings.clangd")
+	 	local cpp_opts = require("nvim.lsp.settings.clangd")
 	 	opts = vim.tbl_deep_extend("force", cpp_opts, opts)
 	 end
 
 	 if server.name == "pywright" then
-	 	local python_opts = require("milosz.lsp.settings.pywright")
+	 	local python_opts = require("nvim.lsp.settings.pywright")
 
 	server:setup(opts)
 end)

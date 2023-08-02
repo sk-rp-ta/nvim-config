@@ -3,5 +3,5 @@ if not status_ok then
   return
 end
 
-require "milosz.lsp.mason"
-require("milosz.lsp.handlers").setup()
+require "nvim.lsp.mason"
+require("nvim.lsp.handlers").setup()
