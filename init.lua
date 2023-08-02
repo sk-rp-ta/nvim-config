@@ -11,4 +11,5 @@ require "milosz.bufferline"
 require "milosz.spotify"
 require "milosz.autopairs"
 require "milosz.toggleterm"
+require "milosz.lualine"
 

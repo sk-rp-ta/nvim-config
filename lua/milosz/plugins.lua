@@ -44,7 +44,6 @@ return packer.startup(function(use)
     use "nvim-lua/popup.nvim"
     use "nvim-lua/plenary.nvim"
 	use "nvim-telescope/telescope.nvim"
-    use "nvim-tree/nvim-web-devicons"
     use {"nvim-tree/nvim-tree.lua",
 			tag = 'nightly'
 		}
@@ -53,14 +52,19 @@ return packer.startup(function(use)
 		run = ":TSUpdate",
 	}
 	use "stsewd/spotify.nvim"
-	use "akinsho/bufferline.nvim"
 	use "moll/vim-bbye"
-	-- dashboard
+	-- icons
+	-- use "kyazdani42/nvim-web-devicons"	
+    use "nvim-tree/nvim-web-devicons"
+	-- ui
+	use "nvim-lualine/lualine.nvim"
+	use "akinsho/bufferline.nvim"
 	use "goolord/alpha-nvim"
+	use "lukas-reineke/indent-blankline.nvim"
+	-- theme
 	use "lunarvim/darkplus.nvim"
 	-- helpers
 	use "windwp/nvim-autopairs"
-	use "lukas-reineke/indent-blankline.nvim"
 	use "akinsho/toggleterm.nvim"
 	-- completion
 	use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -76,7 +80,7 @@ return packer.startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "williamboman/mason.nvim"
   	use "williamboman/mason-lspconfig.nvim"
-	
+
 	-- tests
 	use {
 		"nvim-neotest/neotest",
