@@ -64,6 +64,7 @@ return packer.startup(function(use)
 	-- theme
 	use "lunarvim/darkplus.nvim"
 	-- helpers
+	use "norcalli/nvim-colorizer.lua"
 	use "windwp/nvim-autopairs"
 	use "akinsho/toggleterm.nvim"
 	-- completion

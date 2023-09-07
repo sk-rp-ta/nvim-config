@@ -13,4 +13,4 @@ require "nvim.autopairs"
 require "nvim.toggleterm"
 require "nvim.navic"
 require "nvim.lualine"
-
+require "nvim.colorizer"
