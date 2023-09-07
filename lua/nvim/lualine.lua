@@ -1,4 +1,5 @@
-local colors = require "nvim.colors"
+local colors = require("nvim.colors")
+local icons = require("nvim.icons")
 
 local navic_ok, navic = pcall(require, 'nvim-navic')
 local winbar_cfg = {}
@@ -53,10 +54,10 @@ if navic_ok then
 		lualine_c = {
 			{ "diagnostics",
 				symbols = {
-					error = "e",
-					warn = "w",
-					info = "i",
-					hint = "?",
+					error = icons.error,
+					warn = icons.warning,
+					info = icons.info,
+					hint = icons.hint,
 				},
 			},
 			{ "filetype", color = { bg = 'NONE'}, icon_only = false, separator = "", padding = { left = 1, right = 0 } },
