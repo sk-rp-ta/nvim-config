@@ -1,12 +1,4 @@
-local colors = {
-	blue   = '#80a0ff',
-	cyan   = '#79dac8',
-	black  = '#080808',
-	white  = '#c6c6c6',
-	red    = '#ff5189',
-	violet = '#d183e8',
-	grey   = '#303030',
-}
+local colors = require "nvim.colors"
 
 local navic_ok, navic = pcall(require, 'nvim-navic')
 local winbar_cfg = {}
