@@ -13,3 +13,4 @@ vim.opt.updatetime = 2000
 -- line numbers
 vim.wo.relativenumber = true
 vim.wo.number = true
+

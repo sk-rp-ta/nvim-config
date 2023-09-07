@@ -1,7 +1,8 @@
 local servers = {
     "lua_ls",
     "clangd",
-    "pyright"
+    "pyright",
+	"cmake"
 }
 
 local settings = {

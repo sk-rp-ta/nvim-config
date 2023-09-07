@@ -1,10 +1,11 @@
 return {
 	settings = {
-
-    python = {
-      analysis = {
-        typeCheckingMode = "off"
-      }
-    }
-	},
+		LSP = {
+			python = {
+				analysis = {
+					typeCheckingMode = "off"
+				}
+			}
+		}
+	}
 }

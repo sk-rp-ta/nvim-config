@@ -1,11 +1,6 @@
 return {
-   settings = {
-      LSP = {
-         clangd = {
-            initializationOptions = {
-            },
-         },
-      },
-   },
+	init_options = {
+		compilationDatabasePath="build"
+	}
 }
 

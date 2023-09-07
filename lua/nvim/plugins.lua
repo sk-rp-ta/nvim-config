@@ -54,9 +54,9 @@ return packer.startup(function(use)
 	use "stsewd/spotify.nvim"
 	use "moll/vim-bbye"
 	-- icons
-	-- use "kyazdani42/nvim-web-devicons"	
     use "nvim-tree/nvim-web-devicons"
 	-- ui
+	use "loctvl842/breadcrumb.nvim"
 	use "nvim-lualine/lualine.nvim"
 	use "akinsho/bufferline.nvim"
 	use "goolord/alpha-nvim"
@@ -80,7 +80,7 @@ return packer.startup(function(use)
 	use "neovim/nvim-lspconfig"
 	use "williamboman/mason.nvim"
   	use "williamboman/mason-lspconfig.nvim"
-
+	use "SmiteshP/nvim-navic"
 	-- tests
 	use {
 		"nvim-neotest/neotest",

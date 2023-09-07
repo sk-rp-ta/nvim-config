@@ -17,7 +17,7 @@ lsp_installer.on_server_ready(function(server)
 	 end
 
 	 if server.name == "pywright" then
-	 	local python_opts = require("nvim.lsp.settings.pywright")
+	 	--local python_opts = require("nvim.lsp.settings.pywright")
 
 	server:setup(opts)
 end)

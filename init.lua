@@ -11,5 +11,6 @@ require "nvim.bufferline"
 require "nvim.spotify"
 require "nvim.autopairs"
 require "nvim.toggleterm"
+require "nvim.navic"
 require "nvim.lualine"
 
