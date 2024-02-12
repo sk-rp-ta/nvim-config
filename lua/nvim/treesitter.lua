@@ -1,6 +1,8 @@
 local status_ok, configs = pcall(require, "nvim-treesitter.configs")
+
 if not status_ok then
-	return
+    vim.notify("Check file treesitter.lua", "error" , {title=" Could not load treesitter"})
+    return
 end
 
 configs.setup {

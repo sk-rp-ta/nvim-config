@@ -1,6 +1,7 @@
 local status_ok, bufferline = pcall(require, "bufferline")
 if not status_ok then
-  return
+    vim.notify("Check file bufferline.lua", "error", {title=" Could not load bufferline"})
+    return
 end
 
 bufferline.setup {
@@ -14,10 +15,9 @@ bufferline.setup {
     -- and so changing this is NOT recommended, this is intended
     -- as an escape hatch for people who cannot bear it for whatever reason
     indicator_icon = "▎",
-    buffer_close_icon = "",
-    -- buffer_close_icon = '',
+    buffer_close_icon = '',
     modified_icon = "●",
-    close_icon = "",
+    close_icon = "",
     -- close_icon = '',
     left_trunc_marker = "",
     right_trunc_marker = "",

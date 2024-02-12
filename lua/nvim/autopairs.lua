@@ -1,7 +1,8 @@
 -- Setup nvim-cmp.
 local status_ok, npairs = pcall(require, "nvim-autopairs")
 if not status_ok then
-  return
+    vim.notify("Check file autopairs.lua", "error", {title=" Could not load nvim autopairs"})
+    return
 end
 
 npairs.setup {
